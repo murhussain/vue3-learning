@@ -22,7 +22,7 @@
 </head>
 <body>
   <div id="app">
-    <button :class="buttonClasses">Click</button>
+    <button :class="buttonClasses" v-on:click="toggle">Click Me</button>
   </div>
 
   <script>
@@ -31,6 +31,12 @@
         return{
           buttonClasses: 'text-green'
         };
+      },
+
+      methods: {
+        toggle() {
+          this.buttonClasses='text-red'
+        }
       }
     }).mount('#app')
   </script>
