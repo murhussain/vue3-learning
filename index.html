@@ -10,7 +10,8 @@
 </head>
 <body class="h-full grid place-items-center">
   <div id="app">
-    <app-button></app-button>
+    <app-button>Submit</app-button>
+    <app-button>Save</app-button>
   </div>
 
   <script>
@@ -18,7 +19,9 @@
       components: {
         'app-button': {
           template:`
-            <div>What's up</div>
+            <button class="bg-gray-200 hover:bg-gray-400 border rounded px-5 py-2">
+              <slot />
+            </button>
           `,
 
           mounted() {
