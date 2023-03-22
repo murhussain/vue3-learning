@@ -13,10 +13,15 @@
     <h1 class="font-bold mb-2">Assignments</h1>
 
     <ul>
-      <li>Finish project <input type="checkbox"></li>
-      <li>Read chapter 4 <input type="checkbox"></li>
-      <li>Turn in homework <input type="checkbox"></li>
+      <li v-for="assignment in assignments">
+        <label>
+          {{assignment.name}}
+          <input type="checkbox" v-model="assignment.completed">
+        </label>
+      </li>
     </ul>
+
+    <pre>{{assignments}}</pre>
   </div>
 
   <script>
