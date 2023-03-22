@@ -19,6 +19,13 @@
         return {
           message: 'Hello World'
         }
+      },
+      
+      // changing the value of message after 3 seconds
+      mounted() {
+        setTimeout(() => {
+          this.message = 'changed the value'
+        }, 3000)
       }
     }).mount('#app')
   </script>
