@@ -16,16 +16,22 @@
       display:grid;
       place-items: center;
     }
+    .text-red{color: red;}
+    .text-green{color: green;}
   </style>
 </head>
 <body>
   <div id="app">
-    <button>Click</button>
+    <button v-bind:class="buttonClasses">Click</button>
   </div>
 
   <script>
     Vue.createApp({
-      
+      data() {
+        return{
+          buttonClasses: 'text-green'
+        };
+      }
     }).mount('#app')
   </script>
 </body>
