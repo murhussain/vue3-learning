@@ -5,11 +5,11 @@ export default {
   components: { AssignmentList, AssignmentCreate },
 
   template: `
-    <main class="space-y-10">
-      <assignment-list :assignments="filters.inProgress" title="In Progress"></assignment-list>
-      <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
-
-      <assignment-create @add="addNew"></assignment-create>
+    <main class="flex gap-8">
+      <assignment-list :assignments="filters.inProgress" title="In Progress">
+        <assignment-create @add="addNew"></assignment-create>
+      </assignment-list>
+      <assignment-list :assignments="filters.completed" title="Completed" can-toggle ></assignment-list>
     </main>
   `,
 
@@ -33,7 +33,6 @@ export default {
       .then(response => response.json())
       .then(assignment => {
         this.assignments = assignment;
-        // console.log(assignment);
       });
   },
 
