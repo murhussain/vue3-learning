@@ -9,7 +9,7 @@ export default {
       <assignment-list :assignments="filters.inProgress" title="In Progress"></assignment-list>
       <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
 
-      <assignment-create :assignments="assignments"></assignment-create>
+      <assignment-create @add="addNew"></assignment-create>
     </main>
   `,
 
@@ -31,4 +31,14 @@ export default {
       };
     },
   },
+
+  methods: {
+    addNew(name) {
+      this.assignments.push({
+        id: this.assignments.length + 1,
+        name: name,
+        completed: false,
+      });
+    }
+  }
 }
