@@ -7,6 +7,13 @@ export default {
     <main class="space-y-10">
       <assignment-list :assignments="inProgress" title="In Progress"></assignment-list>
       <assignment-list :assignments="completed" title="Completed"></assignment-list>
+
+      <form>
+      <div class="border border-gray-600 text-black">
+      <input type="text" placeholder="Add Assignment" class="p-2">
+      <button type="submit" class="bg-white p-2 border-l">Add</button>
+      </div>
+      </form>
     </main>
   `,
 
