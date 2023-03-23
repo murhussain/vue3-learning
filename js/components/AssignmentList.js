@@ -17,7 +17,7 @@ export default {
           class="border rounded px-1 py-px text-xs"
           :class="{ 
             'border-blue-600 text-blue-500' : currentTag === tag,
-           }"
+          }"
         >
           {{ tag }}
         </button>
