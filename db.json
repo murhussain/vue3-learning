@@ -8,85 +8,13 @@
     },
     {
       "id": 2, 
-      "name": "Finish project", 
+      "name": "Read chapter 4", 
       "completed": false, 
       "tag": "math"
     },
     {
       "id": 3, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 4, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 5, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 6, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 7, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 8, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 9, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 10, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 11, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 12, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 13, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 14, 
-      "name": "Finish project", 
-      "completed": false, 
-      "tag": "math"
-    },
-    {
-      "id": 15, 
-      "name": "Finish project", 
+      "name": "Turn in homework", 
       "completed": false, 
       "tag": "math"
     }
