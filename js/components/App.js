@@ -8,7 +8,7 @@ export default {
     <div class="grid gap-6">
       <Assignments></Assignments>
 
-    <panel></panel>
+    <panel heading="hello there"></panel>
     </div>
   `,
 }
