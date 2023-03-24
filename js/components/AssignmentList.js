@@ -5,13 +5,13 @@ export default {
   components: { Assignment, AssignmentTag },
 
   template: `
-    <section v-if="assignments.length" class="">
+    <section v-if="show && assignments.length" class="">
       <div class="flex items-start justify-between">
         <h1 class="font-bold mb-2">
           {{ title }}
           <span>({{assignments.length}})</span>
         </h1>
-        <button v-show="canToggle">&times</button>
+        <button v-show="canToggle" @click="show = false">&times</button>
       </div>
 
       <assignment-tag 
@@ -40,6 +40,7 @@ export default {
   data() {
     return {
       currentTag: 'all',
+      show: true,
     }
   },
 
@@ -48,7 +49,6 @@ export default {
       if (this.currentTag === 'all') {
         return this.assignments;
       }
-
       return this.assignments.filter(a => a.tag === this.currentTag);
     },
   }
