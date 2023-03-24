@@ -6,10 +6,14 @@ export default {
       </h1>
 
       <slot />
+
+      <footer v-if="$slots.footer" class="border-t border-gray-600 mt-4 pt-4 text-sm">
+        <slot name="footer"></slot>
+      </footer>
     </div>
   `,
 
   props: {
-    heading: String,
+    theme: {type: String, default: 'dark'}
   }
 }

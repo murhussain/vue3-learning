@@ -19,6 +19,18 @@ export default {
           this is my default content
         </template>
       </panel>
+
+      <panel>
+        <template v-slot:heading>
+          Hey there
+        </template>
+        
+        this is my default content
+
+        <template v-slot:footer>
+          Click here to learn more....
+        </template>
+      </panel>
     </div>
   `,
 }
