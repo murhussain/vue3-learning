@@ -7,8 +7,9 @@ export default {
   template: `
     <div class="grid gap-6">
       <Assignments></Assignments>
-
-    <panel heading="hello there"></panel>
+      <panel>
+        hello there <p class="text-green">hey</p>
+      </panel>
     </div>
   `,
 }
