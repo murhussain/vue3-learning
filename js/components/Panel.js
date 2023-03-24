@@ -1,6 +1,10 @@
 export default {
   template: `
-    <div class="bg-gray-700 p-4 border border-gray-600 rounded-lg">
+    <div :class="{
+      'p-4 border rounded-lg': true,
+      'bg-white text-black border-gray-300': theme === 'light',
+      'bg-gray-700 text-white border-gray-600': theme === 'dark'
+    }">
       <h1 v-if="$slots.heading" class="font-bold mb-2">
         <slot name="heading" />
       </h1>
