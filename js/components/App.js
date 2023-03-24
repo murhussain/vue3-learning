@@ -4,6 +4,8 @@ export default {
   components: { Assignments },
 
   template: `
-    <Assignments></Assignments>
+    <div class="grid gap-6">
+      <Assignments></Assignments
+    </div>
   `,
 }

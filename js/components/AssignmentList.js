@@ -1,11 +1,12 @@
 import Assignment from './Assignment.js';
 import AssignmentTag from './AssignmentTag.js';
+import Panel from "./Panel.js";
 
 export default {
-  components: { Assignment, AssignmentTag },
+  components: { Assignment, AssignmentTag, Panel },
 
   template: `
-    <section v-if="assignments.length" class="">
+    <Panel v-if="assignments.length" class="">
       <div class="flex items-start justify-between">
         <h1 class="font-bold mb-2">
           {{ title }}
@@ -28,7 +29,11 @@ export default {
       </ul>
       
       <slot></slot>
-    </section>
+
+      <template v-slot:footer>
+        My footer goes here
+      </template>
+    </Panel>
   `,
 
   props: {
