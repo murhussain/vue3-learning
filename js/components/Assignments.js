@@ -9,13 +9,16 @@ export default {
       <assignment-list :assignments="filters.inProgress" title="In Progress">
         <assignment-create @add="addNew"></assignment-create>
       </assignment-list>
-      <assignment-list 
-        v-show="showCompleted"
-        :assignments="filters.completed" 
-        title="Completed" 
-        can-toggle 
-        @toggle="showCompleted = !showCompleted"
-      ></assignment-list>
+
+      
+      <div v-show="showCompleted">
+        <assignment-list 
+          :assignments="filters.completed" 
+          title="Completed" 
+          can-toggle 
+          @toggle="showCompleted = !showCompleted"
+        ></assignment-list>
+      </div>
     </main>
   `,
 
